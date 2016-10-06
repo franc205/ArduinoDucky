@@ -3,18 +3,20 @@
 Requirement list:
 Arduino UNO R3
 OS (We recomment linux)
-dfu-programmer packet
-Arduino-keyboard-0.3.hex (USB keyboard firmware)
-Arduino-usbserial-uno.hex (Arduino Original firmware)
+[dfu-programmer packet](https://dfu-programmer.github.io)
+[Arduino-keyboard-0.3.hex](http://hunt.net.nz/users/darran/weblog/b3029/Arduino_UNO_Keyboard_HID_version_03.html)
+[Arduino-usbserial-uno.hex](http://dl.dropbox.com/u/1816557/Arduino-usbserial-uno.hex)
 
 Setting up guide :
-Boot to DFU Mode : Youtube Guide
+
 Flash original Arduino UNO Firmware
 
     sudo dfu-programmer atmega16u2 erase --force
     sudo dfu-programmer atmega16u2 flash 'Arduino-usbserial-uno.hex'
     sudo dfu-programmer atmega16u2 reset
+
 Upload code.ino to your arduino
+
 Flash Arduino Keyboard Firmwere
 
     sudo dfu-programmer atmega16u2 erase --force
