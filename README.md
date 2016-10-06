@@ -9,46 +9,44 @@ Requirement list:
     Arduino-usbserial-uno.hex (Arduino Original firmware)
 
 Setting up guide :
+Boot to DFU Mode : Youtube Guide
+Flash original Arduino UNO Firmware
 
-    Boot to DFU Mode : Youtube Guide
-    Flash original Arduino UNO Firmware
+    sudo dfu-programmer atmega16u2 erase --force
+    sudo dfu-programmer atmega16u2 flash 'Arduino-usbserial-uno.hex'
+    sudo dfu-programmer atmega16u2 reset
+Upload code.ino to your arduino
+Flash Arduino Keyboard Firmwere
 
-sudo dfu-programmer atmega16u2 erase --force
-sudo dfu-programmer atmega16u2 flash 'Arduino-usbserial-uno.hex'
-sudo dfu-programmer atmega16u2 reset
-
-    Upload code.ino to your arduino
-    Flash Arduino Keyboard Firmwere
-
-sudo dfu-programmer atmega16u2 erase --force
-sudo dfu-programmer atmega16u2 flash 'Arduino-keyboard-0.3.hex.hex'
-sudo dfu-programmer atmega16u2 reset
+    sudo dfu-programmer atmega16u2 erase --force
+    sudo dfu-programmer atmega16u2 flash 'Arduino-keyboard-0.3.hex.hex'
+    sudo dfu-programmer atmega16u2 reset
 
 Code Guide
 Press key
 
-keyPress(0, <Keycode>); 
+    keyPress(0, <Keycode>); 
 
 Example
 
-keyPress(LEFT_GUI, 0x15); // Press R Key
+    keyPress(LEFT_GUI, 0x15); // Press R Key
 
 Press Multiple key
 
-keyPress(<Modifier Key>, <KeyCode>);
+    keyPress(<Modifier Key>, <KeyCode>);
 
 Example
 
-keyPress(LEFT_GUI, 0x15); // Press Windows Key + R
+    keyPress(LEFT_GUI, 0x15); // Press Windows Key + R
 
 Release Key
 
-keyRelease();
+    keyRelease();
 
 Write Text
 
-keyString(<Text>);
+    keyString(<Text>);
 
 Example
 
-keyString("Hello World!"); // Write Hello World
+    keyString("Hello World!"); // Write Hello World
