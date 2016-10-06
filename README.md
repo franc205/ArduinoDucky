@@ -1,12 +1,11 @@
 # Arduino Ducky
 
 Requirement list:
-
-    Arduino UNO R3
-    OS (We recomment linux)
-    dfu-programmer packet
-    Arduino-keyboard-0.3.hex (USB keyboard firmware)
-    Arduino-usbserial-uno.hex (Arduino Original firmware)
+Arduino UNO R3
+OS (We recomment linux)
+dfu-programmer packet
+Arduino-keyboard-0.3.hex (USB keyboard firmware)
+Arduino-usbserial-uno.hex (Arduino Original firmware)
 
 Setting up guide :
 Boot to DFU Mode : Youtube Guide
