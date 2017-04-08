@@ -4,7 +4,7 @@ Requirement list:
 
 Arduino UNO R3
 
-OS (We recomment linux)
+OS (We recommend linux)
 
 [dfu-programmer packet](https://dfu-programmer.github.io)
 
