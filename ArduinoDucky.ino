@@ -93,9 +93,8 @@ void keyString(String text) {
       }
     }
     
-    else if(((int)temp_char >= 48 && (int)temp_char <= 57) || ((int)temp_char >= 43 && (int)temp_char <= 46 || (int)temp_char == 32  || (int)temp_char == 39 || (int)temp_char == 173 || (int)temp_char == 164 || (int)temp_char == 91 || (int)temp_char == 93)) //Si el caratecer es una letra mayuscula o minuscula...
+    else if(((int)temp_char >= 48 && (int)temp_char <= 57) || ((int)temp_char >= 43 && (int)temp_char <= 46 || (int)temp_char == 32  || (int)temp_char == 39 || (int)temp_char == 173 || (int)temp_char == 164 || (int)temp_char == 91 || (int)temp_char == 93)) //Si el caratecer es un caracter especial o un numero...
     {
-      //check = false; //Flag para distinguir nros de caractes especiales
       for(int j = 0;j<sizeof(mean_normal_sym)-1;j++)  //Recorro los nros
       {
         if(temp_char == normal_sym[j]) //Si en una de esas coincide
